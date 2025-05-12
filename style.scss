@@ -696,7 +696,7 @@ body {
     }
 }
 
-@for $i from 0 through 8 {
+@for $i from 0 through 9 {
     .career-child:nth-child(#{$i + 1}) {
         animation-delay: (0.25 * $i) + s;
         animation-duration: 1s;
@@ -746,7 +746,6 @@ body {
         }
     }
 
-    .career-info,
     &__line-wrap {
         margin-top: 24px;
     }
@@ -763,7 +762,16 @@ body {
         border-right: 1px solid #fff;
         height: 68px;
         margin: 0 auto;
+        position: relative;
         width: 1px;
+
+        &--promotion {
+            background-image: linear-gradient(transparent 33%, #fff 0%);
+            background-position: right;
+            background-size: 1px 10px;
+            background-repeat: repeat-y;
+            border: none;
+        }
 
         &--final {
             border-right: 1px dashed #fff;
