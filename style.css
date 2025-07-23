@@ -373,6 +373,9 @@ body::-webkit-scrollbar-thumb {
   font-style: normal;
   font-weight: 700;
 }
+.about__header--proj, .about__sub-header--proj {
+  color: #ffffff;
+}
 @media screen and (max-width: 900px) {
   .about__header, .about__sub-header {
     font-size: 2rem;
