@@ -141,7 +141,7 @@ body {
 
 .nav {
     background-color: #1d1d1d;
-    overflow: hidden;
+    // overflow: hidden;
     position: fixed;
     transition: 0.3s;
     top: 0;
@@ -203,23 +203,6 @@ body {
 
             &:hover {
                 border-bottom: 2px solid #00CF6E;
-            }
-        }
-
-        &--cv {
-            background-color: #03874b;
-            border-bottom: 0 !important;
-            border-radius: 999px;
-            padding: 7.5px 22px;
-            transition: 0.8s;
-            outline: 2px solid transparent;
-
-            &:hover,
-            &:focus-visible {
-                background-color: transparent;
-                color: #1BB76E;
-                outline: 2px solid #1BB76E;
-                transition: 0.2s;
             }
         }
 
@@ -299,6 +282,76 @@ body {
     }
 }
 
+.cv-dropdown {
+    align-self: flex-start;
+    background-color: #03874b;
+    border-bottom: 0 !important;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    outline: 2px solid transparent;
+    overflow: hidden;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:focus,
+    &:focus-within {
+
+        svg {
+            transform: rotate(180deg);
+        }
+
+        .cv-dropdown__inner {
+            display: flex;
+        }
+    }
+
+    &__text {
+        align-items: center;
+        display: flex;
+        padding: 7.5px 22px;
+
+        span {
+            bottom: 0.5px;
+            position: relative;
+        }
+
+        svg {
+            margin-left: 10px;
+            position: relative;
+            top: 0.5px;
+        }
+    }
+
+    &__inner {
+        background-color: #ffffff;
+        flex-direction: column;
+        display: none;
+        overflow: hidden;
+        text-align: left;
+        transition: 0.8s;
+        top: 40px;
+        max-width: 100%;
+
+        a {
+            color: #101010;
+            padding: 12px 22px;
+            text-decoration: none;
+
+            &:hover,
+            &:focus-visible {
+                background: #E3E3E3;
+                outline: none;
+            }
+        }
+    }
+}
+
 .back {
     border-bottom: 1px solid transparent;
     color: #00CF6E;
@@ -340,7 +393,7 @@ body {
 
     &__header,
     &__sub-header {
-        color: #CFCFCF;
+        color: #ffffff;
         display: inline;
         font-size: 2.75rem;
         font-weight: 200;
@@ -349,7 +402,7 @@ body {
 
         em,
         &--proj {
-            color: #ffffff;
+            color: #00CF6E;
             font-style: normal;
             font-weight: 700;
         }
@@ -460,7 +513,7 @@ body {
     }
 
     &__text {
-        color: #00CF6E;
+        color: #ffffff;
         display: block;
         font-size: 1.44rem;
         font-weight: 700;
@@ -487,7 +540,7 @@ body {
         width: 33px;
 
         &__stroke {
-            stroke: #00cf6e;
+            stroke: #ffffff;
         }
 
         @media screen and (max-width: 900px) {
@@ -1010,7 +1063,7 @@ body {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
-    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-columns: 25% 25% 25% 25%;
 
     @media screen and (max-width: 600px) {
         grid-template-columns: 50% 50%;

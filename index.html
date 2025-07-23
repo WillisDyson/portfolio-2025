@@ -11,13 +11,13 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Willis Dyson Portfolio | UX Developer | Accessibility Specialist</title>
+    <title>Willis Dyson Portfolio | Front End UI Developer | Accessibility Lead</title>
     <meta name="description"
-        content="I am Willis Dyson, a UX Developer based in Leeds, UK. I'm an Accessibility Specialist with a heavy background in UX/UI.">
-    <meta property='og:title' content='Willis Dyson Portfolio | Front End Developer | Accessibility Specialist' />
+        content="I am Willis Dyson, a Front End UI Developer based in Leeds, UK. I'm an Accessibility Lead with a heavy background in UX/UI.">
+    <meta property='og:title' content='Willis Dyson Portfolio | Front End Developer | Accessibility Lead' />
     <meta property='og:image' content='https://willisdyson.pages.dev/images/share-img.png' />
     <meta property='og:description'
-        content="I am Willis Dyson, a UX Developer based in Leeds, UK. I'm an Accessibility Specialist with a heavy background in UX/UI." />
+        content="I am Willis Dyson, a Front End UI Developer based in Leeds, UK. I'm an Accessibility Lead with a heavy background in UX/UI." />
     <meta property='og:url' content='https://willisdyson.pages.dev' />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/vnu2nqk.css">
@@ -60,8 +60,26 @@
                 <a class="nav__item" href="#career">Career & Education</a>
                 <a class="nav__item" href="#work">Projects</a>
                 <a class="nav__item" href="#contact">Social Media & Contact</a>
-                <a class="nav__item nav__item--cv" href="/assets/WillisDyson-CV-2025.pdf" download>Download my
-                    CV</a>
+                <div class="cv-dropdown" tabindex="0" role="combobox">
+                    <div class="cv-dropdown__text">
+                        <span>Download my CV</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10.634" height="6.454"
+                            viewBox="0 0 10.634 6.454">
+                            <path id="Icon_awesome-chevron-up" data-name="Icon awesome-chevron-up"
+                                d="M6.128,8.854l4.733,4.733a.584.584,0,0,1,0,.827l-.552.552a.584.584,0,0,1-.826,0L5.715,11.216,1.947,14.967a.584.584,0,0,1-.826,0l-.552-.552a.584.584,0,0,1,0-.827L5.3,8.854A.584.584,0,0,1,6.128,8.854Z"
+                                transform="translate(-0.398 -8.683)" fill="#fff" />
+                        </svg>
+
+                    </div>
+                    <div class="cv-dropdown__inner">
+                        <a class="cv-dropdown__link" href="/assets/willis-dyson__cv-july-2025-i.pdf"
+                            download>Screen-friendly
+                            PDF</a>
+                        <a class="cv-dropdown__link" href="/assets/willis-dyson__cv-july-2025-a.pdf"
+                            download>Print-friendly
+                            PDF</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -73,13 +91,14 @@
                 <img class="about__img about-child" src="images/me.png"
                     alt="Photograph of Willis. He has short brown hair, glasses, and short facial hair. He is smiling while wearing a grey and T-shirt and looking into the distance.">
                 <div class="about__upper about-child">
-                    <h1 class="about__header">Hi, I'm <em>Willis</em></h1>
+                    <h1 class="about__header">Hi, I'm <em>Willis Dyson</em></h1>
                     <img class="about__hand" src="images/wave.png" alt="Waving hand.">
                 </div>
                 <div class="about-child">
-                    <p class="about__sub-header">I'm a <em>Web Accessibility Lead</em> and <em>UX Developer</em>
+                    <p class="about__sub-header">I'm a <em>Front End UI Developer</em> and <em>Web Accessibility
+                            Lead</em>
                         based in
-                        <em>Leeds, UK</em>
+                        Leeds, UK
                     </p>
                     <img class="about__flag" src="images/uk.png" alt="United Kingdom flag.">
                 </div>
@@ -110,8 +129,9 @@
                             <h3 class="skill-card__name">Front End Web Development</h3>
                         </div>
                         <div class="skill-card__summary-section">
-                            <p class="skill-card__summary">Currently employed as UX Developer & Web Accessibility Lead,
-                                with 5+ years of
+                            <p class="skill-card__summary">Currently employed as Front End UI Developer & Web
+                                Accessibility Lead,
+                                with 6+ years of
                                 professional experience.</p>
                         </div>
                         <h4 class="skill-card__subtitle">Main skills</h4>
@@ -140,14 +160,14 @@
                                 <img class="skill-card__skill-img" alt="" src="images/react.png">
                                 <span class="skill-card__skill-name">React</span>
                             </div>
-                            <!-- <div class="skill-card__skill">
-                                <img class="skill-card__skill-img" alt="" src="images/nextjs.png">
-                                <span class="skill-card__skill-name">Next.js</span>
-                            </div>
                             <div class="skill-card__skill">
                                 <img class="skill-card__skill-img" alt="" src="images/ts.png">
                                 <span class="skill-card__skill-name">TypeScript</span>
-                            </div> -->
+                            </div>
+                            <div class="skill-card__skill">
+                                <img class="skill-card__skill-img" alt="" src="images/tw.png">
+                                <span class="skill-card__skill-name">Tailwind</span>
+                            </div>
                         </div>
                     </div>
 
@@ -157,7 +177,7 @@
                             <h3 class="skill-card__name">UX Design</h3>
                         </div>
                         <div class="skill-card__summary-section">
-                            <p class="skill-card__summary">I have a strong UX Design background, with 5+ years of
+                            <p class="skill-card__summary">I have a strong UX Design background, with 6+ years of
                                 professional experience in various UX (and related) roles.</p>
                         </div>
                         <h4 class="skill-card__subtitle">Main skills</h4>
@@ -178,12 +198,12 @@
                             <h3 class="skill-card__name">Web Accessibility</h3>
                         </div>
                         <div class="skill-card__summary-section">
-                            <p class="skill-card__summary">I have specialised in and advocated for Web Accessibility
-                                throughout my career as a Developer, as it is a cause that is
-                                incredibly important to me.</p>
+                            <p class="skill-card__summary">Alongside my development duties, I am responsible for leading
+                                TopCashback's web accessibility initiatives.</p>
                         </div>
                         <h4 class="skill-card__subtitle">Main skills</h4>
                         <ul class="skill-card__skills-list">
+                            <li class="skill-card__skill-listing">Facilitating accessibility audits</li>
                             <li class="skill-card__skill-listing">Accessible-needs user research</li>
                             <li class="skill-card__skill-listing">Leading in-house training</li>
                             <li class="skill-card__skill-listing">Production of guides &amp; documentation</li>
@@ -344,7 +364,7 @@
                 </div>
                 <div class="career-info career-child">
                     <small class="career-info__location">Stafford, West Midlands, UK</small>
-                    <h3 class="career-info__role">UX Developer & Web Accessibility Lead</h3>
+                    <h3 class="career-info__role">Front End UI Developer & Web Accessibility Lead</h3>
                     <span class="career-info__duration">Current role since March 2025</span>
                     <div id="job-0-accordion" aria-expanded="false" aria-controls="job-desc-0"
                         class="career-info__more-info" role="button" tabindex="0">Read summary<svg aria-hidden="true"
@@ -359,6 +379,10 @@
                         class="career-info__more-info-text career-info__more-info-text--hidden">
                         <p>Promoted into a new role, formally recognising me as TopCashback's
                             Web Accessibility Lead and subject matter expert.</p>
+                        <p>Alongside my web development duties, I am responsible for leading
+                            TopCashback's web accessibility initiatives. This includes, but is not limited to, leading
+                            training sessions, facilitating audits, and ensuring compliance with accessibility
+                            standards.</p>
                     </div>
                     <div class="career-grid__line-wrap" role="presentation">
                         <!-- Vertical line -->
@@ -375,7 +399,7 @@
                 </div>
                 <div class="career-info career-child">
                     <small class="career-info__location">Stafford, West Midlands, UK</small>
-                    <h3 class="career-info__role">UX Developer</h3>
+                    <h3 class="career-info__role">Front End UI Developer</h3>
                     <span class="career-info__duration">Feb 2022 – Mar 2025</span>
                     <div id="job-1-accordion" aria-expanded="false" aria-controls="job-desc-1"
                         class="career-info__more-info" role="button" tabindex="0">Read summary<svg aria-hidden="true"
@@ -390,7 +414,7 @@
                         class="career-info__more-info-text career-info__more-info-text--hidden">
                         <p>Returned to TopCashback after a previous successful year as a UX Design Intern. Currently
                             working
-                            as a UX Developer within the Design/UX team. My main purpose is
+                            as a Front End UI Developer within the Design/UX team. My main purpose is
                             to "bridge the gap"
                             between the UX
                             Designers and the
@@ -661,8 +685,8 @@
 
         </section>
 
-        <section id="socials" aria-label="Social media" class="socials section">
-            <h2 class="heading-two">Social Media</h2>
+        <section id="contact" aria-label="Social media" class="socials section">
+            <h2 class="heading-two">Social Media & Contact</h2>
             <div class="socials-grid">
 
                 <!-- Social item -->
@@ -686,18 +710,18 @@
                 </a>
                 <!-- -->
 
+                <!-- Social item -->
+                <a href="https://www.youtube.com/channel/UCMibWdrv2ByTKmkfM3vnzqQ" class="social-item">
+                    <img class="social-item__img" src="images/yt.png" alt="">
+                    <span class="social-item__text">YouTube</span>
+                </a>
+                <!-- -->
+
             </div>
 
             </div>
         </section>
     </main>
-
-    <footer id="contact" class="contact hidden" aria-label="Contact">
-        <h2 class="contact__header heading-two">Contact</h2>
-        <p class="contact__sub-text">Download my CV to view my contact details
-        </p>
-        <a href="/assets/WillisDyson-CV-2025.pdf" download class="proj-slice__return-button">Download my CV</a>
-    </footer>
 
 </body>
 
