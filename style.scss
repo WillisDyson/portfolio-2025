@@ -402,7 +402,7 @@ body {
 
         em,
         &--proj {
-            color: #00f080;
+            color: #00CF6E;
             font-style: normal;
             font-weight: 700;
         }
@@ -1264,6 +1264,38 @@ body {
                 }
             }
         }
+    }
+
+    &__colours {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        @media (max-width: 650px) {
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+    &__colour {
+        align-items: center;
+        border-radius: 999px;
+        display: flex;
+        flex-shrink: 0;
+        height: 100px;
+        justify-content: center;
+        outline: 1px solid #ffffff;
+        width: 100px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 650px) {
+            height: 90px;
+            width: 90px;
+        }
+
     }
 
     &__image {
