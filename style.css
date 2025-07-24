@@ -369,7 +369,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
 }
 .about__header em, .about__header--proj, .about__sub-header em, .about__sub-header--proj {
-  color: #00CF6E;
+  color: #00f080;
   font-style: normal;
   font-weight: 700;
 }
