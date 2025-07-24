@@ -790,14 +790,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .career-grid__logo {
+  display: flex;
   grid-column-start: 1;
   grid-column-end: 1;
-}
-.career-grid__logo {
-  display: flex;
+  padding-bottom: 92px;
 }
 .career-grid__logo img {
-  align-self: center;
+  align-self: flex-start;
   max-width: 100%;
 }
 @media screen and (max-width: 600px) {
@@ -810,6 +809,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 600px) {
   .career-grid__logo {
     justify-content: center;
+    padding-bottom: 0;
   }
 }
 .career-grid__line-wrap {

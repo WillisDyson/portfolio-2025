@@ -779,16 +779,15 @@ body {
         grid-template-columns: 100%;
     }
 
-    &__logo {
-        grid-column-start: 1;
-        grid-column-end: 1;
-    }
 
     &__logo {
         display: flex;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        padding-bottom: 92px;
 
         img {
-            align-self: center;
+            align-self: flex-start;
             max-width: 100%;
 
             @media screen and (max-width: 600px) {
@@ -800,6 +799,7 @@ body {
 
         @media screen and (max-width: 600px) {
             justify-content: center;
+            padding-bottom: 0;
         }
     }
 
