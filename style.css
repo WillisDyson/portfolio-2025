@@ -207,6 +207,20 @@ body::-webkit-scrollbar-thumb {
 .nav__item--active:hover {
   border-bottom: 2px solid #00CF6E;
 }
+.nav__item--cv {
+  background-color: #03874b;
+  border-bottom: 0 !important;
+  border-radius: 999px;
+  outline: 2px solid transparent;
+  overflow: hidden;
+  padding: 7px 22px 8px;
+  transition: 0.3s;
+}
+.nav__item--cv:hover, .nav__item--cv:focus-visible, .nav__item--cv:focus, .nav__item--cv:focus-within {
+  background-color: transparent;
+  color: #00CF6E;
+  outline: 2px solid #00CF6E;
+}
 @media (max-width: 1180px) {
   .nav__item {
     font-size: 0.8rem;

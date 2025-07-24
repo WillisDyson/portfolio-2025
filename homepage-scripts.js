@@ -32,7 +32,6 @@ const cardsAnimCallback = (entries, observer) => {
 const certsAnimCallback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log("is intersecting");
             animateCerts();
         }
     });
@@ -84,10 +83,8 @@ function animateCards() {
 }
 
 function animateCerts() {
-    console.log("animateCerts function running");
     for (let i = 0; i < allCerts.length; i++) {
         allCerts[i].classList.add("certif--animate");
-        console.log("looping and adding classes");
     }
 }
 
@@ -152,7 +149,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const sectionObserver = new IntersectionObserver(createSectionCallback(sectionName), sectionOpts);
         sectionCallbacks[sectionName] = createSectionCallback(sectionName);
         sectionObserver.observe(sections[i]);
-        console.log("observer set up for: " + sections[i]);
     }
 
     document.addEventListener("scroll", setNavHighlights);
@@ -165,8 +161,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         } else {
             lastVisibleSection = visibleSections[visibleSections.length - 1];
         }
-
-        console.log(visibleSections);
 
 
         if (!navLinks[lastVisibleSection].classList.contains("nav__item--active")) {
