@@ -61,6 +61,7 @@ function handleMoreInfoClick(e) {
         moreInfoText.classList.toggle("career-info__more-info-text--hidden");
         const isExpanded = moreInfoText.classList.contains("career-info__more-info-text--hidden") ? "false" : "true";
         this.setAttribute("aria-expanded", isExpanded);
+        this.querySelector(".career-info__icon").classList.toggle("career-info__icon--flipped");
     }
 }
 

@@ -919,6 +919,10 @@ body::-webkit-scrollbar-thumb {
   margin-left: 6px;
   position: relative;
   top: 3px;
+  transition: 0.3s;
+}
+.career-info__icon--flipped {
+  transform: rotate(180deg);
 }
 
 .work-vid {
