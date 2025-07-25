@@ -1020,7 +1020,7 @@ body {
     }
 
     &__label {
-        background-color: #E8793A;
+        background-color: #c94a00;
         border-radius: 999px;
         display: inline-block;
         font-size: 0.75rem;
@@ -1033,12 +1033,12 @@ body {
             margin-right: 0;
         }
 
-        &--a11y {
-            background-color: #2A88E5;
+        &--tw {
+            background-color: #007b8e;
         }
 
         &--uxui {
-            background-color: #DA3B67;
+            background-color: #c72d59;
         }
 
         &--react {
@@ -1046,7 +1046,15 @@ body {
         }
 
         &--api {
-            background-color: #e83a3a;
+            background-color: #b31313;
+        }
+
+        &--vue {
+            background-color: #00874b;
+        }
+
+        &--a11y {
+            background-color: #00486a;
         }
 
         &--wip {
@@ -1286,6 +1294,19 @@ body {
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+        }
+
+        a {
+            border-bottom: 1px solid transparent;
+            color: #00CF6E;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover {
+                border-bottom: 1px solid #00CF6E;
             }
         }
     }

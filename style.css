@@ -1062,7 +1062,7 @@ body::-webkit-scrollbar-thumb {
   padding: 16px 23px;
 }
 .work-item__label {
-  background-color: #E8793A;
+  background-color: #c94a00;
   border-radius: 999px;
   display: inline-block;
   font-size: 0.75rem;
@@ -1074,17 +1074,23 @@ body::-webkit-scrollbar-thumb {
 .work-item__label:last-child {
   margin-right: 0;
 }
-.work-item__label--a11y {
-  background-color: #2A88E5;
+.work-item__label--tw {
+  background-color: #007b8e;
 }
 .work-item__label--uxui {
-  background-color: #DA3B67;
+  background-color: #c72d59;
 }
 .work-item__label--react {
   background-color: #843ae8;
 }
 .work-item__label--api {
-  background-color: #e83a3a;
+  background-color: #b31313;
+}
+.work-item__label--vue {
+  background-color: #00874b;
+}
+.work-item__label--a11y {
+  background-color: #00486a;
 }
 .work-item__label--wip {
   background-color: #747474;
@@ -1353,6 +1359,17 @@ body::-webkit-scrollbar-thumb {
 }
 .proj-slice__content-block ul li:last-child {
   margin-bottom: 0;
+}
+.proj-slice__content-block a {
+  border-bottom: 1px solid transparent;
+  color: #00CF6E;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.proj-slice__content-block a:hover {
+  border-bottom: 1px solid #00CF6E;
 }
 .proj-slice__colours {
   display: flex;
