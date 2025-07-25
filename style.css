@@ -296,11 +296,17 @@ body::-webkit-scrollbar-thumb {
   outline: 2px solid transparent;
   overflow: hidden;
 }
+.cv-dropdown svg {
+  transform: rotate(180deg);
+}
 .cv-dropdown:hover {
   cursor: pointer;
 }
+.cv-dropdown:hover, .cv-dropdown:focus, .cv-dropdown:focus-visible {
+  background-color: #006b3b;
+}
 .cv-dropdown:hover svg, .cv-dropdown:focus-visible svg, .cv-dropdown:focus svg, .cv-dropdown:focus-within svg {
-  transform: rotate(180deg);
+  transform: rotate(0);
 }
 .cv-dropdown:hover .cv-dropdown__inner, .cv-dropdown:focus-visible .cv-dropdown__inner, .cv-dropdown:focus .cv-dropdown__inner, .cv-dropdown:focus-within .cv-dropdown__inner {
   display: flex;
