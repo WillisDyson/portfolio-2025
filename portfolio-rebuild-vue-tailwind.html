@@ -1,0 +1,296 @@
+<!-- 
+  Copyright © Willis John Dyson, 2024. All rights reserved. 
+  The code in this file is the property of Willis John Dyson and is not licensed or authorised for use, modification, or distribution.
+  Unauthorised use or reproduction of this code is strictly prohibited.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Vue.js and Tailwind rebuild of Portfolio front page | Willis Dyson
+      Portfolio
+    </title>
+    <meta
+      name="description"
+      content="A Vue.js and Tailwind CSS-based rebuild of my portfolio front page, to showcase my skills."
+    />
+    <meta
+      property="og:title"
+      content="Vue.js and Tailwind rebuild of Portfolio front page | Willis Dyson Portfolio"
+    />
+    <meta
+      property="og:image"
+      content="https://willisdyson.dev/images/share-img.png"
+    />
+    <meta
+      property="og:description"
+      content="A Vue.js and Tailwind CSS-based rebuild of my portfolio front page, to showcase my skills."
+    />
+    <meta
+      property="og:url"
+      content="https://willisdyson.dev/portfolio-rebuild-vue-tailwind"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vnu2nqk.css" />
+  </head>
+
+  <body>
+    <nav class="nav hidden">
+      <div role="button" tabindex="0" class="nav__hamburger">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="23.84"
+          height="16.894"
+          viewBox="0 0 23.84 16.894"
+        >
+          <g
+            id="Icon_feather-menu"
+            data-name="Icon feather-menu"
+            transform="translate(-3 -7.5)"
+          >
+            <path
+              id="Path_12"
+              data-name="Path 12"
+              d="M4.5,18H25.34"
+              transform="translate(0 -2.053)"
+              fill="none"
+              stroke="#00cf6e"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+            <path
+              id="Path_13"
+              data-name="Path 13"
+              d="M4.5,9H25.34"
+              fill="none"
+              stroke="#00cf6e"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+            <path
+              id="Path_14"
+              data-name="Path 14"
+              d="M4.5,27H25.34"
+              transform="translate(0 -4.106)"
+              fill="none"
+              stroke="#00cf6e"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="nav__wrap nav__wrap--retracted">
+        <div role="button" tabindex="0" class="nav__close">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="18.979"
+            height="18.979"
+            viewBox="0 0 18.979 18.979"
+          >
+            <g
+              id="Icon_feather-menu"
+              data-name="Icon feather-menu"
+              transform="translate(-5.431 -6.457)"
+            >
+              <path
+                id="Path_12"
+                data-name="Path 12"
+                d="M4.5,18H25.34"
+                transform="translate(-8.358 13.769) rotate(-45)"
+                fill="none"
+                stroke="#00cf6e"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+              <path
+                id="Path_14"
+                data-name="Path 14"
+                d="M4.5,27H25.34"
+                transform="translate(23.462 -13.695) rotate(45)"
+                fill="none"
+                stroke="#00cf6e"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="nav__inner">
+          <a href="index.html#about" class="nav__item nav__item--cv"
+            >Back to home</a
+          >
+          <a class="nav__item" href="index.html#about">About</a>
+          <a class="nav__item" href="index.html#skills">Skills</a>
+          <a class="nav__item" href="index.html#certifs">Certifications</a>
+          <a class="nav__item" href="index.html#career">Career & Education</a>
+          <a class="nav__item" href="index.html#work">Projects</a>
+          <a class="nav__item" href="index.html#contact"
+            >Social Media & Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+    <header class="hidden section" aria-label="Project header">
+      <div
+        class="about about--proj"
+        style="
+          background-image: url(images/pftw-head.png);
+          background-position-y: 0;
+        "
+      >
+        <div class="about__upper about__upper--proj about-child">
+          <h1 class="about__header about__header--proj">
+            Vue.js and Tailwind CSS Portfolio Rebuild
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="hidden section proj-slice"
+      aria-label="Project introduction"
+    >
+      <h2 class="proj-slice__header">Project introduction</h2>
+      <div class="proj-slice__content-block">
+        <p>
+          A full rebuild of my portfolio front page using Vue.js and Tailwind
+          CSS, to showcase my skills. I focused on creating modular components,
+          making use of dynamic data and state as much as possible.
+        </p>
+      </div>
+    </section>
+
+    <section class="hidden section proj-slice proj-slice--alt">
+      <h2 class="proj-slice__header">Overview</h2>
+      <div style="text-align: center" class="proj-slice__content-block">
+        <a
+          style="display: inline-block; text-align: center; color: #ffffff"
+          class="nav__item nav__item--cv"
+          href="https://willisdyson-vue-tailwind-portfolio.netlify.app/"
+          >View live Vue.js/Tailwind CSS app</a
+        >
+        <br />
+        <br />
+        <a
+          style="display: inline-block; text-align: center"
+          class="proj-slice__link"
+          href="https://github.com/WillisDyson/portfolio-homepage-vue-tailwind"
+          >View on GitHub</a
+        >
+      </div>
+      <div style="margin-top: 50px" class="proj-slice__content-block">
+        <h3 class="proj-slice__sub-header">
+          Full rebuild of my portfolio front page
+        </h3>
+        <img
+          class="proj-slice__image"
+          src="images/pftw-1.png"
+          alt="Screenshot of the rebuilt front page"
+        />
+        <img
+          class="proj-slice__image"
+          src="images/pftw-2.png"
+          alt="Screenshot of the rebuilt front page"
+        />
+      </div>
+      <div style="margin-top: 50px" class="proj-slice__content-block">
+        <h3 class="proj-slice__sub-header">
+          Reusable components with modular Tailwind CSS
+        </h3>
+        <p>
+          This project utilises modular components built with Vue.js and styled
+          with Tailwind CSS, allowing for maximum reusability.
+        </p>
+        <img
+          class="proj-slice__image"
+          src="images/pftw-3.png"
+          alt="Example of reusable components with Tailwind CSS"
+        />
+      </div>
+      <div style="margin-top: 50px" class="proj-slice__content-block">
+        <h3 class="proj-slice__sub-header">Dynamic data, props and looping</h3>
+        <p>
+          Components make use of dynamic data, props and looping to render
+          content efficiently.
+        </p>
+        <img
+          class="proj-slice__image"
+          src="images/pftw-5.png"
+          alt="Example of dynamic data and props"
+        />
+        <img
+          class="proj-slice__image"
+          src="images/pftw-6.png"
+          alt="Example of dynamic data and props"
+        />
+      </div>
+      <div style="margin-top: 50px" class="proj-slice__content-block">
+        <h3 class="proj-slice__sub-header">
+          Global style overrides and @applys
+        </h3>
+        <p>
+          Reusable styles have been set up as @applys in Tailwind CSS, allowing
+          for consistent styling and easy modification across components.
+        </p>
+        <img
+          class="proj-slice__image"
+          src="images/pftw-4.png"
+          alt="Example of global style overrides and @applys"
+        />
+      </div>
+    </section>
+
+    <section class="hidden section proj-slice">
+      <h2 class="proj-slice__header">Project retrospective</h2>
+      <div class="proj-slice__content-block">
+        <ul>
+          <li>
+            A very fun project in which I was able to improve and showcase my
+            Vue.js and Tailwind CSS skills.
+          </li>
+          <li>
+            I'm very proud of the level of detail applied here, especially in
+            regards to creating clean, well-organised components.
+          </li>
+          <li>
+            I haven't implemented much complex state functionality, due to both
+            time constraints and that fact that I am still developing my Vue.js
+            skills.
+          </li>
+          <li>
+            The page has limited responsiveness as this was omitted due to time
+            constraints, but
+            <a href="https://willisdyson-vue-tailwind-portfolio.netlify.app/"
+              >a full example of the responsive site can be seen on my portfolio
+              website</a
+            >.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="hidden section proj-slice proj-slice--footer">
+      <h2 class="proj-slice__sub-header">See next:</h2>
+      <a href="vuetw-proj.html" class="see-next__text"
+        >Vue.js and Tailwind URL shortener app</a
+      >
+      <a href="index.html#about" class="proj-slice__return-button"
+        >Return to homepage</a
+      >
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
