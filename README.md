@@ -1,6 +1,3 @@
-<span><em>Note: This website is still work in progress, with estimated completion late January 2024.</em></span>
-<br>
-
 <h1>My personal portfolio site</h1>
 
 <p>I designed and developed this website from the ground up to showcase my skills, career history and other important content.</p>
