@@ -1019,6 +1019,14 @@ body {
         animation-name: fadeIn;
     }
 
+    &--hero {
+        grid-column: 1 / span 2;
+
+        @media screen and (max-width: 600px) {
+            grid-column: unset;
+        }
+    }
+
     @media screen and (max-width: 900px) {
         border-radius: 14px;
         margin: 12.5px;
@@ -1085,6 +1093,7 @@ body {
     &__image {
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 50%;
         height: 348px;
         margin-top: auto;
 

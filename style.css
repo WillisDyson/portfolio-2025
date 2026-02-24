@@ -1059,6 +1059,14 @@ body::-webkit-scrollbar-thumb {
 .work-item--animate {
   animation-name: fadeIn;
 }
+.work-item--hero {
+  grid-column: 1/span 2;
+}
+@media screen and (max-width: 600px) {
+  .work-item--hero {
+    grid-column: unset;
+  }
+}
 @media screen and (max-width: 900px) {
   .work-item {
     border-radius: 14px;
@@ -1116,6 +1124,7 @@ body::-webkit-scrollbar-thumb {
 .work-item__image {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   height: 348px;
   margin-top: auto;
 }
