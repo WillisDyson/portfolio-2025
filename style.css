@@ -715,7 +715,6 @@ body::-webkit-scrollbar-thumb {
 
 .career {
   max-width: 940px;
-  padding: 100px 25px 100px;
 }
 .career__heading {
   margin-bottom: 33px;
@@ -724,6 +723,9 @@ body::-webkit-scrollbar-thumb {
   .career__heading {
     margin-bottom: 20px;
   }
+}
+.career {
+  padding: 100px 25px 100px;
 }
 @media screen and (max-width: 900px) {
   .career {
@@ -1299,11 +1301,11 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.proj-slice {
-  padding: 80px 40px 80px;
-}
 .proj-slice--alt {
   background-color: #101010;
+}
+.proj-slice {
+  padding: 80px 40px 80px;
 }
 @media (max-width: 650px) {
   .proj-slice {
